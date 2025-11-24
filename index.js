@@ -1,6 +1,6 @@
 // Importer Express-rammeværket for at oprette en webserver
 import express from 'express';
-
+import dotenv from 'dotenv';
 
 // Angiv den port serveren skal lytte på
 const port = 4000;
