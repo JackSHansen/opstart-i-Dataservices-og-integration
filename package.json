@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/JackSHansen/opstart-i-Dataservices-og-integration/issues"
   },
-  "homepage": "https://github.com/JackSHansen/opstart-i-Dataservices-og-integration#readme"
+  "homepage": "https://github.com/JackSHansen/opstart-i-Dataservices-og-integration#readme",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
 }
