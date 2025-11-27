@@ -2,9 +2,11 @@
   "name": "opstart-i-dataservices-og-integration",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/index.js",
+    "dev": "ts-node-dev --respawn --transpile-only src/index.ts"
   },
   "repository": {
     "type": "git",
@@ -18,7 +20,15 @@
   },
   "homepage": "https://github.com/JackSHansen/opstart-i-Dataservices-og-integration#readme",
   "dependencies": {
+    "@prisma/client": "^7.0.0",
     "dotenv": "^17.2.3",
     "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "ts-node": "^10.0.0",
+    "ts-node-dev": "^2.0.0",
+    "@types/express": "^4.17.13",
+    "@types/node": "^18.0.0"
   }
 }
